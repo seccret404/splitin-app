@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "SplitIn",
+    "slug": "splitin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "splitin",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#76ABAE"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.splitin.app"
+    },
+    "android": {
+      "package": "com.splitin.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#76ABAE"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "SplitIn butuh akses foto buat mempercantik struk bagi-bagi tagihan kamu."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
